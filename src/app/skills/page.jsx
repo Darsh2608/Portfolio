@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Exptimeline from "../components/Exptimeline";
 import { VerticalTimeline } from "react-vertical-timeline-component";

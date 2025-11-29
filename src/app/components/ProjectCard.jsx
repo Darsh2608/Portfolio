@@ -1,3 +1,4 @@
+"use client";
 import {
   Avatar,
   Box,
@@ -104,7 +105,10 @@ const ProjectCard = ({
               <Link className="text-[var(--background-color)]" />
             </button>
           ) : (
-            <button disabled className="rounded-2xl p-2 bg-[#08d66569] cursor-not-allowed">
+            <button
+              disabled
+              className="rounded-2xl p-2 bg-[#08d66569] cursor-not-allowed"
+            >
               <Link className="text-[var(--background-color)]" />
             </button>
           )}
