@@ -38,7 +38,7 @@ const ProjectCard = ({
         display: "flex",
         flexDirection: "column",
         margin: "20px",
-        height: "450px",
+        height: "auto",
         backgroundColor: "var(--background-color)",
       }}
     >
@@ -94,8 +94,6 @@ const ProjectCard = ({
         >
           {description}
         </Typography>
-      </Box>
-      <Box>
         <CardActions className="flex float-right">
           {url !== "not available" ? (
             <button
