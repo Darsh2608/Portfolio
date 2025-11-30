@@ -47,7 +47,7 @@ const ProjectCard = ({
           src={src}
           height={100}
           width={400}
-          className="w-full object-cover"
+          className="w-full object-fill"
           alt={alt}
         />
       </Box>

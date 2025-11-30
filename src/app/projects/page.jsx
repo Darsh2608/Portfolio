@@ -38,23 +38,14 @@ const projectData = [
     url: "https://fasttrack.apperion.ai/",
   },
   {
-    src: "/Fasttrack.png",
+    src: "/VMS.jpg",
     alt: "Image 3",
     srcavatar: ["/react.svg", "/tailwind-css.svg", "/material-ui.svg"],
     title: "CCTV Stream Application",
     description:
       "This is a Video Management System Which is used for stream and manage a cctv live-feed of the user. I working an a front-end developer for the responsive design.",
     chips: ["React", "Tailwind", "MUI"],
-    url:'not available'
-  },
-  {
-    src: "/Fasttrack.png",
-    alt: "Image 3",
-    srcavatar: ["/react.svg", "/tailwind-css.svg", "/material-ui.svg"],
-    title: "CCTV Stream Application",
-    description:
-      "This is a Video Management System Which is used for stream and manage a cctv live-feed of the user. I working an a front-end developer for the responsive design.",
-    chips: ["React", "Tailwind", "MUI"],
+    url: "not available",
   },
 ];
 
