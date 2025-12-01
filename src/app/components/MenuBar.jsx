@@ -7,6 +7,7 @@ import ProjectPage from "../projects/page";
 import SkillPage from "../skills/page";
 import { useParams, usePathname } from "next/navigation";
 import { List, Rows3, X } from "lucide-react";
+import Footer from "./Footer";
 
 const MenuBar = () => {
   const pathname = usePathname();
@@ -38,6 +39,7 @@ const MenuBar = () => {
             fontWeight: "bolder",
             fontSize: "1.1rem",
             gap: "15rem",
+            background: "#ffffffad",
           }}
         >
           {/* Left side */}
@@ -121,6 +123,13 @@ const MenuBar = () => {
             }}
           >
             <ProjectPage />
+          </Box>
+          <Box
+            sx={{
+              height: "12%",
+            }}
+          >
+            <Footer />
           </Box>
         </Box>
       </Box>

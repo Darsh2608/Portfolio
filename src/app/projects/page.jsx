@@ -51,7 +51,7 @@ const projectData = [
 
 export default function ProjectPage() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-full">
       <Typography
         sx={{
           display: "flex",
@@ -62,7 +62,7 @@ export default function ProjectPage() {
         Projects
       </Typography>
 
-      <div className="w-[60%] sm:w-[75%] md:w-[80%] lg:w-[85%]">
+      <div className="flex items-center justify-center h-full w-[60%] sm:w-[75%] md:w-[80%] lg:w-[85%]">
         <Carousel
           opts={{
             align: "start",

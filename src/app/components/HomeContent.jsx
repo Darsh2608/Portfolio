@@ -12,6 +12,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { Button } from "@/components/ui/button";
 import { Linkedin } from "lucide-react";
+import TypingText from "@/components/ui/shadcn-io/typing-text";
 
 const HomeContent = () => {
   const openLinkedIn = () => {
@@ -33,12 +34,25 @@ const HomeContent = () => {
             THERE,
           </Box>
         </Typography>
-        <Typography sx={{ fontSize: "2rem" }}>
+        <Typography component="div" sx={{ fontSize: "2rem" }}>
           I am{" "}
-          <Box component="span" sx={{ color: "#08d665" }}>
+          <Box component="span">
+            <TypingText
+              text={["Darsh Patel"]}
+              typingSpeed={75}
+              pauseDuration={1000}
+              showCursor={true}
+              cursorCharacter="_"
+              className="text-4xl font-bold"
+              textColors={["#08d665", "#8b5cf6", "#06b6d4"]}
+              variableSpeed={{ min: 50, max: 120 }}
+              loop={true}
+            />
+          </Box>
+          {/* <Box component="span" sx={{ color: "#08d665" }}>
             Darsh{" "}
           </Box>
-          Patel,
+          Patel, */}
         </Typography>
         <Typography sx={{ fontSize: "1.5rem" }}>
           I’m a passionate Frontend Developer.
