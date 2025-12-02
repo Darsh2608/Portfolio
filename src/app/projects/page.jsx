@@ -51,7 +51,7 @@ const projectData = [
 
 export default function ProjectPage() {
   return (
-    <div className="flex flex-col items-center justify-center h-full">
+    <div className="flex flex-col items-center justify-center">
       <Typography
         sx={{
           display: "flex",

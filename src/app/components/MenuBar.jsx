@@ -87,6 +87,11 @@ const MenuBar = () => {
           sx={{
             flex: 1,
             overflow: "auto",
+            "@media (min-width:1563px)": {
+              height: "60%",
+              flex: "unset",
+              overflow: "unset",
+            },
           }}
         >
           {/* Define sections */}

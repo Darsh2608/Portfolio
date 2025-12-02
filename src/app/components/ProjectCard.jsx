@@ -38,7 +38,7 @@ const ProjectCard = ({
         display: "flex",
         flexDirection: "column",
         margin: "20px",
-        height: "auto",
+        height: { md: "460px", lg: "500px" },
         backgroundColor: "var(--background-color)",
       }}
     >
