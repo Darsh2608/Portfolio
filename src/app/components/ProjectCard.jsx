@@ -15,6 +15,7 @@ import Image from "next/image";
 import React from "react";
 import LinkIcon from "@mui/icons-material/Link";
 import { DeleteIcon, Link } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   src,
@@ -25,6 +26,8 @@ const ProjectCard = ({
   chips = [],
   url,
 }) => {
+  const MotionCard = motion(Card);
+
   const openProjectUrl = (url) => {
     if (!url.startsWith("http")) {
       url = "https://" + url;
@@ -33,12 +36,15 @@ const ProjectCard = ({
   };
 
   return (
-    <Card
+    <MotionCard
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      onHoverStart={() => console.log("hover started!")}
       sx={{
         display: "flex",
         flexDirection: "column",
         margin: "20px",
-        height: { md: "460px", lg: "500px" },
+        height: "auto",
         backgroundColor: "var(--background-color)",
       }}
     >
@@ -112,7 +118,7 @@ const ProjectCard = ({
           )}
         </CardActions>
       </Box>
-    </Card>
+    </MotionCard>
   );
 };
 

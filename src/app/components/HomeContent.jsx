@@ -13,11 +13,14 @@ import ProjectCard from "./ProjectCard";
 import { Button } from "@/components/ui/button";
 import { Linkedin } from "lucide-react";
 import TypingText from "@/components/ui/shadcn-io/typing-text";
+import { motion } from "framer-motion";
 
 const HomeContent = () => {
   const openLinkedIn = () => {
     window.open("https://linkedin.com/in/darsh-patel-346022231", "_blank");
   };
+
+  const MotionButton = motion(Button);
 
   return (
     <>
@@ -70,7 +73,9 @@ const HomeContent = () => {
           }}
         >
           <a href="/Darsh_K_Patel-1.pdf" download>
-            <Button
+            <MotionButton
+              whileHover={{ scale: 1.10 }}
+              whileTap={{ scale: 0.95 }}
               style={{
                 color: "#1d2b53",
                 backgroundColor: "#08d665",
@@ -78,10 +83,12 @@ const HomeContent = () => {
               }}
             >
               Download CV
-            </Button>
+            </MotionButton>
           </a>
 
-          <Button
+          <MotionButton
+            whileHover={{ scale: 1.10 }}
+            whileTap={{ scale: 0.95 }}
             style={{
               color: "#1d2b53",
               backgroundColor: "#08d665",
@@ -90,7 +97,7 @@ const HomeContent = () => {
             onClick={openLinkedIn}
           >
             <Linkedin />
-          </Button>
+          </MotionButton>
         </Box>
       </Box>
       <Box
